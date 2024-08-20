@@ -16,7 +16,8 @@ public class Connector {
         try {
             if (conn == null || conn.isClosed()) {
                 // Cargar las variables de entorno desde el archivo .env si está presente
-                Dotenv dotenv = Dotenv.load();
+                //Dotenv dotenv = Dotenv.load();
+                Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
                 
                 // Obtener las variables de entorno, usando valores por defecto si es necesario
                 String url = System.getenv("DB_URL");
