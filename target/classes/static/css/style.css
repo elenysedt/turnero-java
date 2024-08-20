@@ -1,0 +1,57 @@
+.item:hover{
+    background-color: lightblue;
+}
+/* Estilo para la superposición del banner */
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.288); /* Fondo semi-transparente */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+    z-index: 1; /* Coloca el banner sobre la imagen */
+}
+
+/* Estilos para el texto dentro del banner */
+.banner-overlay h1 {
+    color: white; /* Color del texto */
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+    font-style: italic; /* Estilo cursiva */
+    font-weight: bold; /* Negrita */ 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.191); /* Sombra de texto */
+}
+
+.banner-overlay h2 {
+    color: white; /* Color del texto */
+    font-size: 5rem; /* Tamaño de fuente grande */
+    font-style: italic; /* Estilo cursiva */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192); /* Sombra de texto */
+}
+
+
+/* Estilo para la imagen */
+.img-fluid {
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto; /* Altura automática */
+    display: block; /* Para manejar márgenes correctamente */
+}
+
+/* Estilo para la imagen del logo */
+.navbar-brand img {
+    width: 30px; /* Ancho fijo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+    vertical-align: middle; /* Alineación vertical al centro */
+}
+
+/* Estilo para centrar la barra de navegación */
+.navbar {
+    justify-content: center;
+}
+
+/* Estilo para ajustar el logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
